@@ -1,10 +1,17 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# vim mode
+bindkey -v
+export KEYTIMEOUT=1
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/nicoluarte/.oh-my-zsh"
 export PATH=$PATH:/home/nicoluarte/.local/lib
+export PATH=$PATH:/home/nicoluarte/scripts
 export PATH=$PATH:/usr/bin/python3
+export PATH="${PATH}:${HOME}/.local/bin/"
+export PATH="${PATH}:/home/nicoluarte/edirect"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,7 +79,8 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
 	zsh-autosuggestions
-	zsh-syntax-highlighting)
+	zsh-syntax-highlighting
+	vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
