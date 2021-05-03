@@ -2,8 +2,11 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # vim mode
+export EDITOR='nvim'
 bindkey -v
 export KEYTIMEOUT=1
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^v' edit-command-line
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/nicoluarte/.oh-my-zsh"
